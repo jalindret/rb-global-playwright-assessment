@@ -16,18 +16,18 @@ Linux CI can use `npx playwright install --with-deps chromium`. No credentials o
 
 ## Commands
 
-| Command | Purpose |
-| --- | --- |
-| `npm run verify` | Type checking, linting, formatting, requirement mapping and every test |
-| `npm test` | Live UI and API tests, preceded by static checks |
-| `npm run test:ui` / `npm run test:api` | Run one live layer |
-| `npm run test:headed` | Run UI tests with visible browser windows |
-| `npm run test:contracts` | Local payload and displayed-total checks |
-| `npm run test:reporting` | Local Hawkeye checks |
-| `npm run test:smoke` | Directory API and Edmonton navigation |
-| `npm run check` | Static checks without calling the live site |
-| `npm run report` | Open Playwright HTML results |
-| `npm run hawkeye` | Regenerate Hawkeye from recorded evidence |
+| Command                                | Purpose                                                                |
+| -------------------------------------- | ---------------------------------------------------------------------- |
+| `npm run verify`                       | Type checking, linting, formatting, requirement mapping and every test |
+| `npm test`                             | Live UI and API tests, preceded by static checks                       |
+| `npm run test:ui` / `npm run test:api` | Run one live layer                                                     |
+| `npm run test:headed`                  | Run UI tests with visible browser windows                              |
+| `npm run test:contracts`               | Local payload and displayed-total checks                               |
+| `npm run test:reporting`               | Local Hawkeye checks                                                   |
+| `npm run test:smoke`                   | Directory API and Edmonton navigation                                  |
+| `npm run check`                        | Static checks without calling the live site                            |
+| `npm run report`                       | Open Playwright HTML results                                           |
+| `npm run hawkeye`                      | Regenerate Hawkeye from recorded evidence                              |
 
 For one scenario:
 
@@ -39,17 +39,17 @@ Direct Playwright commands do not run the static gate.
 
 ## Structure and design
 
-| Path | Responsibility |
-| --- | --- |
-| `tests/ui/` | Short user scenarios and business expectations |
-| `tests/api/` | Directory, yard and search API scenarios |
-| `tests/contracts/` | Local tests for parsing and invalid response data |
-| `src/pages/` | Locators, browser actions and reusable UI assertions |
-| `src/api/` | HTTP client and Zod response schemas |
-| `src/fixtures.ts` | Isolated, test-scoped page objects and API client |
-| `src/domain/` | Displayed inventory-total parser |
-| `src/reporting/`, `tests/reporting/` | Self-contained Hawkeye integration and checks |
-| `requirements.json` | Supplied criteria and their test tags |
+| Path                                 | Responsibility                                       |
+| ------------------------------------ | ---------------------------------------------------- |
+| `tests/ui/`                          | Short user scenarios and business expectations       |
+| `tests/api/`                         | Directory, yard and search API scenarios             |
+| `tests/contracts/`                   | Local tests for parsing and invalid response data    |
+| `src/pages/`                         | Locators, browser actions and reusable UI assertions |
+| `src/api/`                           | HTTP client and Zod response schemas                 |
+| `src/fixtures.ts`                    | Isolated, test-scoped page objects and API client    |
+| `src/domain/`                        | Displayed inventory-total parser                     |
+| `src/reporting/`, `tests/reporting/` | Self-contained Hawkeye integration and checks        |
+| `requirements.json`                  | Supplied criteria and their test tags                |
 
 Specs express intent; page objects own browser details. The API client validates external JSON as `unknown` before returning schema-inferred types. Separate methods model search pages and count-only responses. A discriminated union represents reported versus absent category quantities; an absent quantity is never treated as zero.
 
