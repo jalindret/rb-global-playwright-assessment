@@ -1,0 +1,10 @@
+node_modules/
+playwright-report/
+test-results/
+.git/
+package-lock.json
+local-validation.config.ts
+
+reports/
+build/
+src/reporting/templates/hawkeye.css

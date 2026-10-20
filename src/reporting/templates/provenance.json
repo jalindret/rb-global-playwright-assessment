@@ -1,0 +1,7 @@
+{
+  "source": "Existing Hawkeye HTML reference supplied for this framework",
+  "sourceSha256": "b31113e10bccd952332e70ec060d7399b11c2864cc12b0d9ca7e5ca59e98d1cf",
+  "cssSha256": "149e718fded396505855b1dfad09b0b4a9dfda3f56a2f278ec6b2f102dc448d0",
+  "verification": "Stylesheet extracted from the supplied reference HTML. The recorded source and CSS fingerprints document that reference; no independent upstream Git comparison is claimed.",
+  "contract": "Preserve original styles, header, verdict, seven tiles, requirement rows, cards, tables, callouts and footer. Adapt report content into the shared 13-section assessment contract."
+}

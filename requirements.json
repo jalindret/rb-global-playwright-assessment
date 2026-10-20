@@ -1,0 +1,199 @@
+{
+  "source": "Code_Activity-RB_Global.pdf",
+  "requiredIds": [
+    "S1.1",
+    "S1.2",
+    "S1.3",
+    "S1.4",
+    "S1.5",
+    "S1.6",
+    "S1.7",
+    "S1.9",
+    "S2.1",
+    "S2.2",
+    "S3.1",
+    "S3.2",
+    "S3.3",
+    "S3.4",
+    "S3.5",
+    "S3.6",
+    "S4.1",
+    "S4.2",
+    "A1.1",
+    "A1.2",
+    "A1.3",
+    "A1.4",
+    "A1.5",
+    "A1.6",
+    "A2.1",
+    "A2.2",
+    "A2.3",
+    "A2.4",
+    "A3.1",
+    "A3.2",
+    "A3.3",
+    "A3.4"
+  ],
+  "criteria": [
+    {
+      "id": "S1.1",
+      "text": "Page title / heading is the locations / auction-sites directory (heading Locations). Intro text is visible and states that Ritchie Bros. offers over 60 permanent auction sites and local yards.",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "S1.2",
+      "text": "Copy explaining that satellite sites are marked with an asterisk * is visible.",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "S1.3",
+      "text": "Scroll below the map. Country names are h4 headings above each site list (first two are United States and Canada). Count those headings. The list must include at least: United States, Canada, Australia, United Kingdom, Netherlands, UAE.",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "S1.4",
+      "text": "Count the US locations. The count must be greater than 20. The list must include Phoenix, Salt Lake City, Houston, Las Vegas, and Atlanta.",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "S1.5",
+      "text": "Count the Canadian locations. The count must be greater than 10. The list must include Edmonton, Montreal, Toronto, Regina, and Saskatoon.",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "S1.6",
+      "text": "Count locations marked with * (satellite) and locations not marked (permanent) on the full directory. Satellite count must be greater than 15. Permanent count must be greater than 25. Combined total must be greater than 60.",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "S1.7",
+      "text": "San Antonio and Calgary, AB appear with an asterisk. Phoenix and Edmonton appear without an asterisk.",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "S1.9",
+      "text": "Both controls are available. Switching to Local representatives changes the content (shows \"Search for representatives\").",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "S2.1",
+      "text": "Edmonton is listed under Canada and is not marked as a satellite.",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "S2.2",
+      "text": "Browser opens the Edmonton yard page. URL contains /lp/edmonton-ab (or the equivalent slug the site uses). Page heading / location name is Edmonton.",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "S3.1",
+      "text": "Address is shown and includes 1500 Sparrow Drive, Nisku, AB, and postal code T9E 8H6. Office hours are shown and include Mon - Fri and a time range. A telephone number is shown.",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "S3.2",
+      "text": "The Auction events heading is visible (below Details). Count the event cards. Count must be at least 1. Each card has a date range (for example Sep 22 - Sep 25) and a title (for example Edmonton, AB, CAN).",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "S3.3",
+      "text": "Section is visible and non-empty. Text mentions that the yard is open on weekdays for drop-off, inspection, and pick-up.",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "S3.4",
+      "text": "This is the Items in yard carousel (not the auction-event cards). Count all category cards in the carousel, including slides that are off-screen — do not count only the 3–4 visible tiles. Count must be greater than 5. Each card has a name and a quantity like N items. The carousel includes Excavators and at least one of Harvesting Equipment, Agricultural Tractors, Sprayers, or Excavator Attachments.",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "S3.5",
+      "text": "\"Become a seller\" form is visible and has a phone number. Do not submit the form.",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "S3.6",
+      "text": "Open the Representatives tab. At least one representative card is shown, with a territory / region and at least one of: phone, mobile, email.",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "S4.1",
+      "text": "A search / inventory view opens. The query or location context is Edmonton.",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "S4.2",
+      "text": "Read the result total from the page — it appears as 2.2k results for \"Edmonton\" (top of the list) and/or 1-60 of 2290 (bottom of the first page). The exact number changes; parse whatever total is shown. Do not count lots by iterating cards. The displayed total must be greater than 0. Each lot visible on the first page has a title. Where a location or closing/auction date is shown on the card, it is non-empty. Log the displayed total and the first 5 titles to the console.",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "A1.1",
+      "text": "Payload is JSON and includes a list of yards/locations.",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "A1.2",
+      "text": "Count of locations is greater than 60.",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "A1.3",
+      "text": "Each location has a name and a country (name or code).",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "A1.4",
+      "text": "The list includes Edmonton (Canada / CAN) and Phoenix (United States / USA).",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "A1.5",
+      "text": "Each location has a site type (Satellite or Permanent). Count of satellite locations is greater than 15. Count of permanent locations is greater than 25.",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "A1.6",
+      "text": "Count of distinct countries is greater than 8 and includes United States and Canada.",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "A2.1",
+      "text": "Payload is JSON.",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "A2.2",
+      "text": "Yard name is Edmonton. Address includes 1500 Sparrow Drive, Nisku, and T9E 8H6. A phone number and pickup/office hours are present.",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "A2.3",
+      "text": "Count upcoming events. If the yard has upcoming events, count is at least 1. Each event has a start/end date (or date range) and a name. At least one event refers to Edmonton or Nisku.",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "A2.4",
+      "text": "Count equipment categories in itemsInYard (flatten the nested category lists). Count is greater than 5. Each category has a name (categoryLocalized). Quantities (totalAssets), when present, are numbers ≥ 0. The list includes Excavators.",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "A3.1",
+      "text": "Response is HTTP 200 and JSON.",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "A3.2",
+      "text": "Read results.totalAmount (or the field the API uses for the full hit count). It must be greater than 0. Do not page through every lot.",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "A3.3",
+      "text": "The first page of records is non-empty. Each record has a display name in assetDescription (there is no title field).",
+      "source": "Code_Activity-RB_Global.pdf"
+    },
+    {
+      "id": "A3.4",
+      "text": "Log the total count and the first 5 titles to the console.",
+      "source": "Code_Activity-RB_Global.pdf"
+    }
+  ]
+}

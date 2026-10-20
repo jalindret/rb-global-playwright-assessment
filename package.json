@@ -1,0 +1,67 @@
+{
+  "name": "rb-global-automation",
+  "version": "1.0.0",
+  "description": "Read-only UI and API checks for Ritchie Bros. locations",
+  "scripts": {
+    "test": "playwright test --project=api --project=ui",
+    "test:ui": "playwright test --project=ui",
+    "test:api": "playwright test --project=api",
+    "test:headed": "playwright test --project=ui --headed",
+    "test:list": "playwright test --list",
+    "typecheck": "tsc --noEmit",
+    "report": "playwright show-report",
+    "prepare": "husky",
+    "lint": "eslint . --max-warnings=0",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "deps:check": "node scripts/check-dependencies.mjs",
+    "check": "npm run deps:check && npm run typecheck && npm run lint && npm run format:check && npm run coverage:check",
+    "test:contracts": "playwright test --project=contracts",
+    "verify": "npm run check && playwright test --project=reporting --project=contracts --project=api --project=ui",
+    "pretest": "npm run check",
+    "pretest:ui": "npm run check",
+    "pretest:api": "npm run check",
+    "pretest:headed": "npm run check",
+    "pretest:contracts": "npm run check",
+    "coverage:check": "node scripts/check-requirements.mjs",
+    "test:smoke": "playwright test --project=api --project=ui --grep @smoke",
+    "pretest:smoke": "npm run check",
+    "build:report": "tsc -p tsconfig.reporting.json",
+    "hawkeye": "npm run build:report && node build/hawkeye/cli.js",
+    "test:reporting": "playwright test --project=reporting",
+    "pretest:reporting": "npm run check"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "devDependencies": {
+    "@commitlint/cli": "21.2.3",
+    "@commitlint/config-conventional": "21.2.3",
+    "@eslint/js": "10.0.1",
+    "@playwright/test": "1.61.1",
+    "@types/node": "26.6.5",
+    "eslint": "10.12.0",
+    "eslint-plugin-playwright": "2.12.1",
+    "husky": "9.1.7",
+    "lint-staged": "16.2.7",
+    "prettier": "3.8.3",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.71.2",
+    "zod": "4.1.13"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22.13.0 <25",
+    "npm": ">=10"
+  },
+  "lint-staged": {
+    "*.{ts,js,mjs,cjs}": [
+      "eslint --fix --max-warnings=0",
+      "prettier --write"
+    ],
+    "*.{json,md,yml,yaml}": [
+      "prettier --write"
+    ]
+  }
+}

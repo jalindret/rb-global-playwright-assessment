@@ -1,0 +1,15 @@
+node_modules/
+playwright-report/
+test-results/
+reports/
+build/
+validation/
+.husky/_/
+.env
+.env.*
+*.zip
+*.log
+*.tsbuildinfo
+local-validation.config.ts
+.DS_Store
+Thumbs.db
